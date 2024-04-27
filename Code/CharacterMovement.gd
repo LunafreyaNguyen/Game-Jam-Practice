@@ -71,6 +71,7 @@ func _physics_process(delta):
 # all the things that it do when you die.
 func Die():
 	get_node("Explosive").set_emitting(true)
+	get_node("Explosive/Sound").play()
 	self.get_node("Shoot").set("visible", false)
 	#Stop Camera and set player to death
 	Camera.set("position", Vector2(0, 0))
