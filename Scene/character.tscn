@@ -99,10 +99,6 @@ animations = [{
 script = ExtResource("1_g1m0b")
 Bullet = ExtResource("2_fsq17")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("3_8g8kb")
-
 [node name="Shoot" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -6)
 scale = Vector2(0.4, 0.4)

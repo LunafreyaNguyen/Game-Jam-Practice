@@ -1,9 +1,9 @@
-res://Scene/character.tscn
 res://Scene/bigger_enemy.tscn
 res://Scene/main_scene.tscn
+res://Scene/character.tscn
 res://Scene/collectible.tscn
-res://Scene/bullet.tscn
-res://Scene/enemy.tscn
 res://Scene/powerable.tscn
 res://Scene/spawner.tscn
 res://Scene/spawn_area.tscn
+res://Scene/bullet.tscn
+res://Scene/enemy.tscn
