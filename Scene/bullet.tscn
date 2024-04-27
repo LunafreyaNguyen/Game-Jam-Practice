@@ -47,6 +47,7 @@ color_ramp = SubResource("Gradient_u8k66")
 
 [node name="Sound" type="AudioStreamPlayer2D" parent="Poof"]
 stream = ExtResource("2_negmh")
+volume_db = -24.47
 
 [node name="Hit" type="CPUParticles2D" parent="."]
 emitting = false
@@ -66,5 +67,6 @@ color_ramp = SubResource("Gradient_u8k66")
 
 [node name="Sound" type="AudioStreamPlayer2D" parent="Hit"]
 stream = ExtResource("2_negmh")
+volume_db = -12.18
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
