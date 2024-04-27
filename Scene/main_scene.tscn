@@ -1,58 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://dyqku4b80noy4"]
+[gd_scene load_steps=8 format=3 uid="uid://dyqku4b80noy4"]
 
 [ext_resource type="Script" path="res://Code/Score Script.gd" id="1_6ltk3"]
 [ext_resource type="PackedScene" uid="uid://bg7rpiubrhh1b" path="res://Scene/character.tscn" id="1_7r2wr"]
 [ext_resource type="PackedScene" uid="uid://ct05s8vrgf6io" path="res://Scene/bigger_enemy.tscn" id="3_6oemb"]
-[ext_resource type="Texture2D" uid="uid://cfmor1l8ax3k3" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-4.png" id="3_hk5pq"]
 [ext_resource type="PackedScene" uid="uid://chluf4qb455d5" path="res://Scene/spawner.tscn" id="3_m5r3x"]
-[ext_resource type="Texture2D" uid="uid://cd5rki4r07l5k" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-0.png" id="4_h3xsx"]
 [ext_resource type="PackedScene" uid="uid://dqq6h8h061orv" path="res://Scene/spawn_area.tscn" id="5_2hk0k"]
-[ext_resource type="Texture2D" uid="uid://cm2wrvejwe4is" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-1.png" id="5_p7c86"]
-[ext_resource type="Texture2D" uid="uid://dgf8i3js5vmbf" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-2.png" id="6_7cuut"]
-[ext_resource type="Texture2D" uid="uid://dhr5fwxfn45od" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-3.png" id="7_3txrp"]
-[ext_resource type="Texture2D" uid="uid://uby6st247aov" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-5.png" id="8_nrw1m"]
-[ext_resource type="Texture2D" uid="uid://cs70fbwrai63d" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-6.png" id="9_pfdhx"]
-[ext_resource type="Texture2D" uid="uid://qmhkivf6j2ss" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-7.png" id="10_3vxig"]
-[ext_resource type="Texture2D" uid="uid://b54k11tpw5sy2" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-8.png" id="11_lypso"]
-[ext_resource type="Texture2D" uid="uid://yoepibb8c6yb" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-9.png" id="12_ttrba"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_wgr8p"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_h3xsx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_p7c86")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_7cuut")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_3txrp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_hk5pq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_nrw1m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_pfdhx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_3vxig")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_lypso")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_ttrba")
-}],
-"loop": true,
-"name": &"default",
-"speed": 60.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dsddx"]
 
@@ -112,15 +64,6 @@ text = "Score:"
 
 [node name="Character" parent="." instance=ExtResource("1_7r2wr")]
 position = Vector2(383, 397)
-
-[node name="Sprite2D" type="Sprite2D" parent="Character"]
-visible = false
-texture = ExtResource("3_hk5pq")
-
-[node name="Shoot" type="AnimatedSprite2D" parent="Character"]
-scale = Vector2(0.4, 0.4)
-sprite_frames = SubResource("SpriteFrames_wgr8p")
-frame_progress = 0.222428
 
 [node name="Spawner" parent="." instance=ExtResource("3_m5r3x")]
 position = Vector2(587, 114)

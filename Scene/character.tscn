@@ -1,20 +1,58 @@
-[gd_scene load_steps=9 format=3 uid="uid://bg7rpiubrhh1b"]
+[gd_scene load_steps=17 format=3 uid="uid://bg7rpiubrhh1b"]
 
 [ext_resource type="Script" path="res://Code/CharacterMovement.gd" id="1_g1m0b"]
 [ext_resource type="PackedScene" uid="uid://c7hm7qkkm1rb0" path="res://Scene/bullet.tscn" id="2_fsq17"]
 [ext_resource type="AudioStream" uid="uid://bant2odl7yq3y" path="res://Sounds/Player_Kill.wav" id="3_3vefl"]
+[ext_resource type="Texture2D" uid="uid://cfmor1l8ax3k3" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-4.png" id="3_m8ad4"]
+[ext_resource type="Texture2D" uid="uid://cd5rki4r07l5k" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-0.png" id="4_csauy"]
+[ext_resource type="Texture2D" uid="uid://cm2wrvejwe4is" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-1.png" id="5_8qq7m"]
+[ext_resource type="Texture2D" uid="uid://dgf8i3js5vmbf" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-2.png" id="6_culwt"]
+[ext_resource type="Texture2D" uid="uid://dhr5fwxfn45od" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-3.png" id="7_867fc"]
+[ext_resource type="Texture2D" uid="uid://uby6st247aov" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-5.png" id="8_10m11"]
+[ext_resource type="Texture2D" uid="uid://cs70fbwrai63d" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-6.png" id="9_74iqx"]
+[ext_resource type="Texture2D" uid="uid://qmhkivf6j2ss" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-7.png" id="10_n4ucg"]
+[ext_resource type="Texture2D" uid="uid://b54k11tpw5sy2" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-8.png" id="11_liku7"]
+[ext_resource type="Texture2D" uid="uid://yoepibb8c6yb" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-9.png" id="12_870bj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b581m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_csauy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8qq7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_culwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_867fc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m8ad4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_10m11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_74iqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_n4ucg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_liku7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_870bj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 60.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l8pfc"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_hgwqg"]
-radius = 10.0
-height = 20.0
-
-[sub_resource type="Gradient" id="Gradient_17gms"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_15p81"]
-gradient = SubResource("Gradient_17gms")
-fill_from = Vector2(1, 0)
 
 [sub_resource type="Gradient" id="Gradient_mtu4j"]
 colors = PackedColorArray(1, 1, 0, 1, 1, 1, 0, 0)
@@ -23,16 +61,17 @@ colors = PackedColorArray(1, 1, 0, 1, 1, 1, 0, 0)
 script = ExtResource("1_g1m0b")
 Bullet = ExtResource("2_fsq17")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_m8ad4")
+
+[node name="Shoot" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -6)
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_b581m")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_l8pfc")
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-mesh = SubResource("SphereMesh_hgwqg")
-
-[node name="Gun" type="Sprite2D" parent="MeshInstance2D"]
-position = Vector2(7, 0)
-scale = Vector2(0.234375, 0.0625)
-texture = SubResource("GradientTexture2D_15p81")
 
 [node name="BulletSpawn" type="Marker2D" parent="."]
 position = Vector2(15, 0)
