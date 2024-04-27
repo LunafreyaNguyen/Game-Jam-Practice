@@ -11,6 +11,7 @@ var power = false
 var power_timer = 0
 
 @onready var absolute_parent = get_parent()
+@onready var kanaSpriteShooting = $Shoot
 
 # controls the player's movement when they die.
 var die: bool = false
@@ -44,7 +45,8 @@ func _physics_process(delta):
 		return
 	
 	# if the player isn't dead...
-	if Input.get_action_raw_strength("Shoot") && timer >= actual_rate:
+	if Input.get_action_raw_strength("Shoot"):
+		kanaSpriteShooting.play()
 		var temp = Bullet.instantiate()
 		add_sibling(temp)
 		temp.global_position = get_node("BulletSpawn").get("global_position")
@@ -54,6 +56,7 @@ func _physics_process(delta):
 		Camera.set("offset", Vector2(randf_range(-4, 4), randf_range(-4, 4)))
 		timer = 0
 	else:
+		kanaSpriteShooting.stop()
 		Camera.set("offset", Vector2(0, 0))
 	# movement is handled like this
 	if direction_x:
@@ -68,7 +71,6 @@ func _physics_process(delta):
 # all the things that it do when you die.
 func Die():
 	get_node("Explosive").set_emitting(true)
-	get_node("Explosive/Sound").play()
 	self.get_node("MeshInstance2D").set("visible", false)
 	#Stop Camera and set player to death
 	Camera.set("position", Vector2(0, 0))

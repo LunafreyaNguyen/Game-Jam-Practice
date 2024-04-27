@@ -1,23 +1,43 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714247188
+::res://::1714250733
 export_presets.cfg::TextFile::-1::1714074919::0::1::::<><>::
 Image.png::CompressedTexture2D::6849883993101874793::1714074919::1714074923::1::::<><>::
-::res://Code/::1714115046
+README.md::TextFile::-1::1714247336::0::1::::<><>::
+::res://addons/::1714247527
+::res://addons/godot-git-plugin/::1714247528
+git_plugin.gdextension::GDExtension::-1::1714247527::0::1::::<><>::
+plugin.cfg::TextFile::-1::1714247528::0::1::::<><>::
+THIRDPARTY.md::TextFile::-1::1714247528::0::1::::<><>::
+::res://addons/godot-git-plugin/linux/::1714247527
+::res://addons/godot-git-plugin/macos/::1714247528
+::res://addons/godot-git-plugin/win64/::1714247527
+::res://Code/::1714249726
 Bullet.gd::GDScript::-1::1714074919::0::1::::<>Area2D<>::
-CharacterMovement.gd::GDScript::-1::1714115046::0::1::::<>CharacterBody2D<>::
+CharacterMovement.gd::GDScript::-1::1714249726::0::1::::<>CharacterBody2D<>::
 Collectable Spawner.gd::GDScript::-1::1714075387::0::1::::<>Area2D<>::
 Collectible.gd::GDScript::-1::1714074919::0::1::::<>Area2D<>::
 Enemy.gd::GDScript::-1::1714074919::0::1::::<>CharacterBody2D<>::
 powerable.gd::GDScript::-1::1714074919::0::1::::<>Area2D<>::
 Score Script.gd::GDScript::-1::1714074919::0::1::::<>Node2D<>::
 Spawner.gd::GDScript::-1::1714074919::0::1::::<>Marker2D<>::
-::res://Scene/::1714075579
-bigger_enemy.tscn::PackedScene::6159894260925694210::1714074919::0::1::::<><>::res://Code/Enemy.gd<>uid://br1gutaatb6bu::::res://Sounds/Kill.wav
-bullet.tscn::PackedScene::7034121613692889423::1714074919::0::1::::<><>::res://Code/Bullet.gd<>uid://dj06uhupptb62::::res://Sounds/Poof.wav
-character.tscn::PackedScene::2874673260588138233::1714074919::0::1::::<><>::res://Code/CharacterMovement.gd<>uid://c7hm7qkkm1rb0::::res://Scene/bullet.tscn<>uid://bant2odl7yq3y::::res://Sounds/Player_Kill.wav
+::res://kanagun.png/::1714250720
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-0.png::CompressedTexture2D::5046389743531382690::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-1.png::CompressedTexture2D::5672212932347530038::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-2.png::CompressedTexture2D::7592736434206139615::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-3.png::CompressedTexture2D::7687510008406993647::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-4.png::CompressedTexture2D::5149439899120453112::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-5.png::CompressedTexture2D::1407354793990509281::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-6.png::CompressedTexture2D::6103827582071184663::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-7.png::CompressedTexture2D::1148237361042332666::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-8.png::CompressedTexture2D::4552607943941517187::1714250720::1714250733::1::::<><>::
+cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-9.png::CompressedTexture2D::1713703612570508717::1714250720::1714250733::1::::<><>::
+::res://Scene/::1714250733
+bigger_enemy.tscn::PackedScene::6159894260925694210::1714249980::0::1::::<><>::res://Code/Enemy.gd<>uid://br1gutaatb6bu::::res://Sounds/Kill.wav
+bullet.tscn::PackedScene::7034121613692889423::1714249717::0::1::::<><>::res://Code/Bullet.gd<>uid://dj06uhupptb62::::res://Sounds/Poof.wav
+character.tscn::PackedScene::2874673260588138233::1714249980::0::1::::<><>::res://Code/CharacterMovement.gd<>uid://c7hm7qkkm1rb0::::res://Scene/bullet.tscn<>uid://bant2odl7yq3y::::res://Sounds/Player_Kill.wav
 collectible.tscn::PackedScene::6663160240250664192::1714074919::0::1::::<><>::res://Code/Collectible.gd
 enemy.tscn::PackedScene::1241745960058873915::1714074919::0::1::::<><>::res://Code/Enemy.gd<>uid://br1gutaatb6bu::::res://Sounds/Kill.wav
-main_scene.tscn::PackedScene::8877468754518063325::1714075579::0::1::::<><>::res://Code/Score Script.gd<>uid://bg7rpiubrhh1b::::res://Scene/character.tscn<>uid://ct05s8vrgf6io::::res://Scene/bigger_enemy.tscn<>uid://chluf4qb455d5::::res://Scene/spawner.tscn<>uid://dqq6h8h061orv::::res://Scene/spawn_area.tscn
+main_scene.tscn::PackedScene::8877468754518063325::1714249980::0::1::::<><>::res://Code/Score Script.gd<>uid://bg7rpiubrhh1b::::res://Scene/character.tscn<>uid://ct05s8vrgf6io::::res://Scene/bigger_enemy.tscn<>uid://chluf4qb455d5::::res://Scene/spawner.tscn<>uid://dqq6h8h061orv::::res://Scene/spawn_area.tscn
 powerable.tscn::PackedScene::3693134386173603094::1714074919::0::1::::<><>::res://Code/powerable.gd
 spawner.tscn::PackedScene::5288096244951368028::1714074919::0::1::::<><>::res://Code/Spawner.gd<>uid://rxrmy77myb60::::res://Scene/enemy.tscn
 spawn_area.tscn::PackedScene::8317210065948408751::1714074919::0::1::::<><>::res://Code/Collectable Spawner.gd<>uid://c16xjmwoohnsq::::res://Scene/collectible.tscn<>uid://bsu8nbvtd4bvq::::res://Scene/powerable.tscn

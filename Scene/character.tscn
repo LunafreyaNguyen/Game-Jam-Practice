@@ -57,3 +57,5 @@ color_ramp = SubResource("Gradient_mtu4j")
 
 [node name="Sound" type="AudioStreamPlayer" parent="Explosive"]
 stream = ExtResource("3_3vefl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
