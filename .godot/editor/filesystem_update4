@@ -1,3 +1,5 @@
-res://Scene/main_scene.tscn
-res://Scene/enemy.tscn
 res://Scene/character.tscn
+res://Scene/main_scene.tscn
+res://Code/CharacterMovement.gd
+res://Scene/bigger_enemy.tscn
+res://Scene/collectible.tscn
