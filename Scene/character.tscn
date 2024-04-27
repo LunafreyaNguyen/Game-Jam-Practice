@@ -1,51 +1,51 @@
-[gd_scene load_steps=17 format=3 uid="uid://bg7rpiubrhh1b"]
+[gd_scene load_steps=18 format=3 uid="uid://bg7rpiubrhh1b"]
 
 [ext_resource type="Script" path="res://Code/CharacterMovement.gd" id="1_g1m0b"]
 [ext_resource type="PackedScene" uid="uid://c7hm7qkkm1rb0" path="res://Scene/bullet.tscn" id="2_fsq17"]
 [ext_resource type="AudioStream" uid="uid://bant2odl7yq3y" path="res://Sounds/Player_Kill.wav" id="3_3vefl"]
-[ext_resource type="Texture2D" uid="uid://cfmor1l8ax3k3" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-4.png" id="3_m8ad4"]
-[ext_resource type="Texture2D" uid="uid://cd5rki4r07l5k" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-0.png" id="4_csauy"]
-[ext_resource type="Texture2D" uid="uid://cm2wrvejwe4is" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-1.png" id="5_8qq7m"]
-[ext_resource type="Texture2D" uid="uid://dgf8i3js5vmbf" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-2.png" id="6_culwt"]
-[ext_resource type="Texture2D" uid="uid://dhr5fwxfn45od" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-3.png" id="7_867fc"]
-[ext_resource type="Texture2D" uid="uid://uby6st247aov" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-5.png" id="8_10m11"]
-[ext_resource type="Texture2D" uid="uid://cs70fbwrai63d" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-6.png" id="9_74iqx"]
-[ext_resource type="Texture2D" uid="uid://qmhkivf6j2ss" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-7.png" id="10_n4ucg"]
-[ext_resource type="Texture2D" uid="uid://b54k11tpw5sy2" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-8.png" id="11_liku7"]
-[ext_resource type="Texture2D" uid="uid://yoepibb8c6yb" path="res://kanagun.png/cbc8ac71a2834e60d66cfeb9ef7816b1Xj4upMc9v81P3TSI-9.png" id="12_870bj"]
+[ext_resource type="Texture2D" uid="uid://cfmor1l8ax3k3" path="res://kanagun/5.png" id="3_8g8kb"]
+[ext_resource type="Texture2D" uid="uid://uby6st247aov" path="res://kanagun/6.png" id="4_5asta"]
+[ext_resource type="Texture2D" uid="uid://cs70fbwrai63d" path="res://kanagun/7.png" id="5_cge7w"]
+[ext_resource type="Texture2D" uid="uid://qmhkivf6j2ss" path="res://kanagun/8.png" id="6_rpw17"]
+[ext_resource type="Texture2D" uid="uid://b54k11tpw5sy2" path="res://kanagun/9.png" id="7_r7bjk"]
+[ext_resource type="Texture2D" uid="uid://yoepibb8c6yb" path="res://kanagun/10.png" id="8_dyk2h"]
+[ext_resource type="Texture2D" uid="uid://cd5rki4r07l5k" path="res://kanagun/1.png" id="9_mv3i4"]
+[ext_resource type="Texture2D" uid="uid://cm2wrvejwe4is" path="res://kanagun/2.png" id="10_aqj1x"]
+[ext_resource type="Texture2D" uid="uid://dgf8i3js5vmbf" path="res://kanagun/3.png" id="11_fk7g7"]
+[ext_resource type="Texture2D" uid="uid://dhr5fwxfn45od" path="res://kanagun/4.png" id="12_qfesu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b581m"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_csauy")
+"texture": ExtResource("4_5asta")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_8qq7m")
+"texture": ExtResource("5_cge7w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_culwt")
+"texture": ExtResource("6_rpw17")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_867fc")
+"texture": ExtResource("7_r7bjk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_m8ad4")
+"texture": ExtResource("8_dyk2h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_10m11")
+"texture": ExtResource("9_mv3i4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_74iqx")
+"texture": ExtResource("10_aqj1x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_n4ucg")
+"texture": ExtResource("11_fk7g7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_liku7")
+"texture": ExtResource("12_qfesu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_870bj")
+"texture": ExtResource("3_8g8kb")
 }],
 "loop": true,
 "name": &"default",
@@ -57,13 +57,51 @@ animations = [{
 [sub_resource type="Gradient" id="Gradient_mtu4j"]
 colors = PackedColorArray(1, 1, 0, 1, 1, 1, 0, 0)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_6knyo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5asta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cge7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rpw17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_r7bjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_dyk2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mv3i4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_aqj1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fk7g7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qfesu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8g8kb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Character" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_g1m0b")
 Bullet = ExtResource("2_fsq17")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource("3_m8ad4")
+texture = ExtResource("3_8g8kb")
 
 [node name="Shoot" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -6)
@@ -98,3 +136,4 @@ color_ramp = SubResource("Gradient_mtu4j")
 stream = ExtResource("3_3vefl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6knyo")
