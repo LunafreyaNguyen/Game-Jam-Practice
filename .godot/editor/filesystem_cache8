@@ -1,8 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714253714
-export_presets.cfg::TextFile::-1::1714074919::0::1::::<><>::
+::res://::1714254054
+export_presets.cfg::TextFile::-1::1714253952::0::1::::<><>::
 icon.png::CompressedTexture2D::8504460899500507489::1714251861::1714251861::1::::<><>::
 Image.png::CompressedTexture2D::6849883993101874793::1714074919::1714074923::1::::<><>::
+index.apple-touch-icon.png::CompressedTexture2D::4777804222525896206::1714253952::1714253966::1::::<><>::
+index.icon.png::CompressedTexture2D::5893664417511186011::1714253952::1714253966::1::::<><>::
+index.png::CompressedTexture2D::8733157412725362014::1714253952::1714253966::1::::<><>::
 README.md::TextFile::-1::1714247336::0::1::::<><>::
 ::res://addons/::1714251861
 ::res://addons/github_to_itch/::1714251861
@@ -48,13 +51,13 @@ givemeyourballs.webp::CompressedTexture2D::1164536813544308569::1714253509::1714
 8.png::CompressedTexture2D::1148237361042332666::1714250720::1714253704::1::::<><>::
 9.png::CompressedTexture2D::4552607943941517187::1714250720::1714253711::1::::<><>::
 10.png::CompressedTexture2D::1713703612570508717::1714250720::1714253714::1::::<><>::
-::res://Scene/::1714253714
-bigger_enemy.tscn::PackedScene::6159894260925694210::1714253677::0::1::::<><>::res://Code/Enemy.gd<>uid://br1gutaatb6bu::::res://Sounds/Kill.wav
+::res://Scene/::1714253998
+bigger_enemy.tscn::PackedScene::6159894260925694210::1714253998::0::1::::<><>::res://Code/Enemy.gd<>uid://br1gutaatb6bu::::res://Sounds/Kill.wav
 bullet.tscn::PackedScene::7034121613692889423::1714249717::0::1::::<><>::res://Code/Bullet.gd<>uid://dj06uhupptb62::::res://Sounds/Poof.wav
-character.tscn::PackedScene::2874673260588138233::1714253714::0::1::::<><>::res://Code/CharacterMovement.gd<>uid://c7hm7qkkm1rb0::::res://Scene/bullet.tscn<>uid://bant2odl7yq3y::::res://Sounds/Player_Kill.wav<>uid://cfmor1l8ax3k3::::res://kanagun/5.png<>uid://uby6st247aov::::res://kanagun/6.png<>uid://cs70fbwrai63d::::res://kanagun/7.png<>uid://qmhkivf6j2ss::::res://kanagun/8.png<>uid://b54k11tpw5sy2::::res://kanagun/9.png<>uid://yoepibb8c6yb::::res://kanagun/10.png<>uid://cd5rki4r07l5k::::res://kanagun/1.png<>uid://cm2wrvejwe4is::::res://kanagun/2.png<>uid://dgf8i3js5vmbf::::res://kanagun/3.png<>uid://dhr5fwxfn45od::::res://kanagun/4.png
-collectible.tscn::PackedScene::6663160240250664192::1714253569::0::1::::<><>::res://Code/Collectible.gd
+character.tscn::PackedScene::2874673260588138233::1714253998::0::1::::<><>::res://Code/CharacterMovement.gd<>uid://c7hm7qkkm1rb0::::res://Scene/bullet.tscn<>uid://bant2odl7yq3y::::res://Sounds/Player_Kill.wav<>uid://cfmor1l8ax3k3::::res://kanagun/5.png<>uid://uby6st247aov::::res://kanagun/6.png<>uid://cs70fbwrai63d::::res://kanagun/7.png<>uid://qmhkivf6j2ss::::res://kanagun/8.png<>uid://b54k11tpw5sy2::::res://kanagun/9.png<>uid://yoepibb8c6yb::::res://kanagun/10.png<>uid://cd5rki4r07l5k::::res://kanagun/1.png<>uid://cm2wrvejwe4is::::res://kanagun/2.png<>uid://dgf8i3js5vmbf::::res://kanagun/3.png<>uid://dhr5fwxfn45od::::res://kanagun/4.png
+collectible.tscn::PackedScene::6663160240250664192::1714253998::0::1::::<><>::res://Code/Collectible.gd
 enemy.tscn::PackedScene::1241745960058873915::1714253509::0::1::::<><>::res://Code/Enemy.gd<>uid://br1gutaatb6bu::::res://Sounds/Kill.wav
-main_scene.tscn::PackedScene::8877468754518063325::1714253569::0::1::::<><>::res://Code/Score Script.gd<>uid://bg7rpiubrhh1b::::res://Scene/character.tscn<>uid://ct05s8vrgf6io::::res://Scene/bigger_enemy.tscn<>uid://chluf4qb455d5::::res://Scene/spawner.tscn<>uid://dqq6h8h061orv::::res://Scene/spawn_area.tscn
+main_scene.tscn::PackedScene::8877468754518063325::1714253998::0::1::::<><>::res://Code/Score Script.gd<>uid://bg7rpiubrhh1b::::res://Scene/character.tscn<>uid://ct05s8vrgf6io::::res://Scene/bigger_enemy.tscn<>uid://chluf4qb455d5::::res://Scene/spawner.tscn<>uid://dqq6h8h061orv::::res://Scene/spawn_area.tscn
 powerable.tscn::PackedScene::3693134386173603094::1714074919::0::1::::<><>::res://Code/powerable.gd
 spawner.tscn::PackedScene::5288096244951368028::1714074919::0::1::::<><>::res://Code/Spawner.gd<>uid://rxrmy77myb60::::res://Scene/enemy.tscn
 spawn_area.tscn::PackedScene::8317210065948408751::1714074919::0::1::::<><>::res://Code/Collectable Spawner.gd<>uid://c16xjmwoohnsq::::res://Scene/collectible.tscn<>uid://bsu8nbvtd4bvq::::res://Scene/powerable.tscn

@@ -136,4 +136,6 @@ color_ramp = SubResource("Gradient_mtu4j")
 stream = ExtResource("3_3vefl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_6knyo")
